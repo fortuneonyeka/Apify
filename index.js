@@ -8,7 +8,7 @@ fetch(url)
       return response.json();
     })
     .then((data) => {
-      let products = data.sort((minPrice,maxPrice)=>parseInt(minPrice.price) < parseInt(maxPrice.price) ? -1: 1).slice(0,900);
+      let products = data.sort((minPrice,maxPrice)=>parseInt(minPrice.price) < parseInt(maxPrice.price) ? -1: 1).slice(0,999);
 
       products.map((product)=>{
         let li = document.createElement('li');
